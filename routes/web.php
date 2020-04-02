@@ -40,3 +40,7 @@ Route::post('/dang-nhap', 'PagesController@postDangNhap')->name('dangnhap');
 Route::get('/dang-xuat', 'PagesController@getDangXuat')->name('dangxuat');
 
 Route::get('/tim-kiem', 'PagesController@getTimKiem')->name('timkiem');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
