@@ -43,4 +43,4 @@ Route::get('/tim-kiem', 'PagesController@getTimKiem')->name('timkiem');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'PagesController@getIndex')->name('home');
